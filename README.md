@@ -28,7 +28,7 @@ Pulp is that desk, **free forever**:
 
 | The deep (landing) | The canvas (studio) |
 |---|---|
-| ![Pulp landing — flickering ASCII fish](public/screenshot.png) | *studio screenshot — coming with the next pass* |
+| ![Pulp landing — flickering ASCII fish](public/screenshot.png) | ![Pulp studio — the canvas](public/studio-screenshot.png) |
 
 ## Tech stack
 
