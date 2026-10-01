@@ -181,3 +181,8 @@ kbd{background:#0b0f15;border:1px solid #2a3648;border-radius:4px;padding:2px 7p
 .manifesto p{font-size:13.5px;line-height:1.85;color:#c4d4c9;margin-bottom:14px}
 .manifesto p b{color:#eef4ef}
 .manifesto .sig{color:var(--amber);letter-spacing:4px}
+
+/* pull-quote — one short attributed line, the soul of the landing */
+.pullquote{max-width:560px;margin:0 0 40px;font-size:14.5px;line-height:1.9;color:#b9d2c2;font-style:italic}
+.pullquote cite{display:block;margin-top:10px;font-size:11.5px;letter-spacing:2.5px;font-style:normal;color:#7fa892}
+.pullquote cite i{font-style:italic}

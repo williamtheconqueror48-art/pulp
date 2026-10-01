@@ -12,6 +12,10 @@ export default function Page() {
           <div className="wordmark" id="wordmark">PULP</div>
           <h1 className="tagline">Ideas swim in the deep.<br /><span>Go down and catch one.</span></h1>
           <p className="sub">A free studio for screenplays, poems &amp; songs.<br />Unlimited scripts. Industry formatting. Zero cost, forever.</p>
+          <blockquote className="pullquote">
+            “If you want to catch little fish, you can stay in the shallow water. But if you want to catch the big fish, you’ve got to go deeper.”
+            <cite>— David Lynch, <i>Catching the Big Fish</i></cite>
+          </blockquote>
           <button id="dive" className="dive-btn" type="button">
             <span className="dive-label">click to dive in</span>
             <span className="dive-arrow">v</span>
