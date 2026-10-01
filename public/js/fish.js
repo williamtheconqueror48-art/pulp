@@ -167,7 +167,8 @@
     landing.classList.add('gone');
     const studio = document.getElementById('studio');
     studio.hidden = false;
-    requestAnimationFrame(() => studio.classList.add('on'));
+    requestAnimationFrame(() => requestAnimationFrame(() => studio.classList.add('on')));
+    setTimeout(() => studio.classList.add('on'), 400); // fallback: rAF can stall in background tabs
     return;
   }
 
@@ -178,7 +179,8 @@
     landing.classList.add('diving');
     const studio = document.getElementById('studio');
     studio.hidden = false;
-    requestAnimationFrame(() => studio.classList.add('on'));
+    requestAnimationFrame(() => requestAnimationFrame(() => studio.classList.add('on')));
+    setTimeout(() => studio.classList.add('on'), 400); // fallback: rAF can stall in background tabs
     setTimeout(() => {
       landing.classList.add('gone');
       if (window.PulpStudio) window.PulpStudio.focus();
