@@ -17,7 +17,7 @@ from dynamic_credentials import add_surrogate_to_request, read_json_response, Dy
 
 VCRED, VAPI = "custom.vercel", "https://api.vercel.com"
 VH = ["api.vercel.com"]
-PROJECT, REPO = "pulp", "williamtheconqueror48-art/pulp"
+PROJECT, REPO = "pulp-app", "williamtheconqueror48-art/pulp"
 
 def vapi(method, path, payload=None):
     data = json.dumps(payload).encode() if payload is not None else None
