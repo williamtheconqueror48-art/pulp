@@ -105,7 +105,7 @@ def main():
 
     link = proj.get("link") or {}
     if link.get("repoId"):
-        dep = vapi("POST", "/v13/deployments",
+        dep = vapi("POST", "/v13/deployments?skipAutoDetectionConfirmation=1",
                    {"name": PROJECT, "project": pid, "target": "production",
                     "gitSource": {"type": "github", "repoId": link["repoId"], "ref": "main"}})
         print("deploying from git main…")
