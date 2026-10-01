@@ -1,1 +1,21 @@
-{"dependencies":{"next":"^15.3.0","pg":"^8.13.0","react":"^19.1.0","react-dom":"^19.1.0"},"name":"pulp","private":true,"scripts":{"build":"next build","dev":"next dev","start":"next start"},"version":"0.1.0"}
+{
+  "dependencies": {
+    "next": "^15.3.0",
+    "pg": "^8.13.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "name": "pulp",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/react": "^19.1.0",
+    "@types/node": "^20.17.6"
+  }
+}
