@@ -114,8 +114,15 @@ def main():
     d = wait_ready(dep["id"])
     url = d.get("url")
     print("LIVE:", f"https://{url}")
+    # Pin the clean production domain to this deployment (manual aliases don't
+    # auto-move; the bare pulp.vercel.app name is owned by another team).
+    try:
+        vapi("POST", f"/v2/deployments/{dep['id']}/aliases", {"alias": "pulp-app.vercel.app"})
+        print("alias pulp-app.vercel.app -> this deployment")
+    except DynamicCredentialError as e:
+        print("alias pin failed:", str(e)[:120])
     r = subprocess.run(["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
-                        f"https://{url}/"], capture_output=True, text=True, timeout=60)
+                        "https://pulp-app.vercel.app/"], capture_output=True, text=True, timeout=60)
     print("public check HTTP:", r.stdout.strip())
 
 if __name__ == "__main__":
