@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { ensureDevice, getPool, validDeviceId, validDocType } from "../../../../../lib/db";
+import { ensureDevice, getPool, validDeviceId, validDocType } from "../../../../lib/db";
 
 export const runtime = "nodejs";
 
